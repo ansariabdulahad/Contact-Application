@@ -229,7 +229,7 @@ function newContactApp(task) {
 
 function updateLocalStorage(name, number, id) {
 
-    if (name != "" && number != "") {
+    if (name != undefined && number != undefined) {
 
         array_list[id] = {
 
