@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css file link -->
+    <link rel="stylesheet" href="../contact/css/contact.css">
+    <!-- bootstrap css link -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Cdn JS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap JS link -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <title>Contact Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- header row -->
+        <div class="row mb-3 mt-3">
+            <div class="col-md-12 text-center">
+                <h1 id="welcome"></h1>
+            </div>
+        </div>
+
+        <!-- make 3 columns of equal size -->
+        <div class="row mt-4">
+
+            <!-- first column -->
+            <div class="col-md-4">
+                <h2 class="text-center">Create Contact</h2>
+
+                <div class="accordion mb-3">
+                    <div class="accordion-item">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button mb-3" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-create">Create New Contact</button>
+                        </h5>
+
+                        <div class="accordion-collapse collapse show" id="collapse-create">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <form action="#">
+                                        <input type="text" placeholder="Name" class="form-control mb-3 name">
+                                        <input type="number" placeholder="Contact" class="form-control mb-3 number">
+                                        <div class="btn-box" align="right">
+                                            <button class="btn create-btn">Create</button>
+                                            <button class="btn update-btn btn-danger d-none">Update</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- second column -->
+            <div class="col-md-4 contact-list-box mb-3">
+                <!-- user icon -->
+                <div class="user-icon text-center mb-3 mt-3">
+                    <i class="fa-regular fa-circle-user"></i>
+                </div>
+
+                <!-- form -->
+                <form action="#">
+                    <div class="input-group mb-3">
+                        <input oninput="mySearch()" type="text" placeholder="Search..." class="form-control" id="search">
+                        <span class="input-group-text">
+                            <i class="fa-solid fa-right-from-bracket" id="logout-btn"></i>
+                        </span>
+                    </div>
+                </form>
+
+                <!-- contact heading -->
+                <h2 class="text-center">Contact Details</h2>
+
+                <!-- contact details -->
+                <div class="contact-details">
+
+                </div>
+            </div>
+
+
+
+            <!-- third column -->
+            <div class="col-md-4">
+                <h2 class="text-center">Restore Deleted Contact</h2>
+
+                <div class="accordion mb-3">
+                    <div class="accordion-item">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse-">Ahad
+                                Ansari</button>
+                        </h5>
+
+                        <!-- accordion collaps -->
+                        <div class="accordion-collapse collapse show" id="collapse-">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5>Ahad Ansari</h5>
+                                        <p>9545282408</p>
+                                    </div>
+
+                                    <div
+                                        class="col-md-6 d-flex justify-content-around align-items-center position-relative">
+                                        <i class="fa-regular fa-message"></i>
+                                        <i class="fa-solid fa-square-phone"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                                        <div class="option-box">
+                                            <i class="fa-regular fa-pen-to-square"></i>
+                                            <i class="fa-regular fa-trash-can"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Contact JS File Link -->
+    <script src="../contact/js/contact.js"></script>
+</body>
+
+</html>

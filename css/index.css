@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-form {
+    position: relative;
+}
+
+.login-form h2 {
+    color: #59CAD2;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login-form i {
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #59CAD2;
+    color: #59CAD2;
+    max-width: 5px 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.login-form i:hover {
+    color: #1e2222;
+    border: 1px solid #1e2222;
+}
+
+.login-form a {
+    text-decoration: none;
+    color: #59CAD2;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login-form button {
+    width: 150px;
+    background-color: #59CAD2;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login-form button:hover {
+    /* background-color: #59CAD2; */
+    background-color: #1e2222;
+    opacity: 0.8;
+    color: #fff;
+}
+
+.login-form .active-box {
+    width: 100%;
+    height: 100%;
+    background-color: #59CAD2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-form .active-box h2 {
+    color: #fff;
+}
+
+.login-form .active-box p {
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login-form .active-box button {
+    border: 2px solid #fff;
+}
+
+form #s-notice {
+    /* color: #59CAD2; */
+    font-size: 22px;
+}
